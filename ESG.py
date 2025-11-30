@@ -32,7 +32,7 @@ controversy_map = {
     'Severe Controversy Level': 5
 }
 df['Controversy_Level_Score'] = df['Controversy_Level'].map(controversy_map)
-df['Controversy_Score'] = pd.to_numeric(df['Controversy_Score'], errors='coerce')
+df['Controversy_Score'] = pd.to_numeric(df['Controversy_Score'], errors='coerce') 
 
 #drop rows with missing core ESG scores
 required_columns = ['Total_ESG_Risk_score', 'Environment_Risk_Score', 'Social_Risk_Score', 'Governance_Risk_Score']
