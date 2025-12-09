@@ -8,7 +8,7 @@ Created on Sun Jul 20 15:05:43 2025
 
 #import libraries
 import pandas as pd
-
+ 
 #load the data
 df=pd.read_csv("SP_500_ESG_Risk_Ratings.csv")
 
