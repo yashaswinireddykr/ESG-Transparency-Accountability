@@ -13,7 +13,7 @@ import pandas as pd
 df=pd.read_csv("SP_500_ESG_Risk_Ratings.csv")
 
 #standardize columns names
-df.columns=df.columns.str.strip().str.replace(' ', '_')
+df.columns=df.columns.str.strip().str.replace(' ', '_') 
 
 #clean column (converting to numeric)
 df['Full_Time_Employees'] = df['Full_Time_Employees'].str.replace(',', '', regex=False)
